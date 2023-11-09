@@ -1,6 +1,6 @@
-[requirements.md](submissions/step_1/requirements.md)
-
-
+# Requirements
+- Markdown file: [requirements.md](submissions/step_1/requirements.md)
+- PDF file: [Requirement.pdf](submissions%2Fstep_1%2FRequirement.pdf)
 # Architect design
 ![application-design.png](submissions%2Fstep_1%2Fapplication-design.png)
 
