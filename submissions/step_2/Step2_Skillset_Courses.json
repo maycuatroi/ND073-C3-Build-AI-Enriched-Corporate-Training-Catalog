@@ -1,0 +1,36 @@
+{
+  "@odata.context": "https://binhna-cogsearch.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DBE17090EB4DC4\"",
+  "name": "courses-skillset",
+  "description": "",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/description",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/description"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/a70a7281-34b4-43ff-932a-1f9171daff2c/resourceGroups/aind-243869/providers/Microsoft.CognitiveServices/accounts/binhna-ai-west-us-2",
+    "key": "517d288d116c45f8ad1b275dfb6442ba"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}
